@@ -1,18 +1,20 @@
 # Auto Typer
 
+![image](https://github.com/user-attachments/assets/1e37494c-866c-438c-8d12-71cfff659709)
+
 ## Overview
-Auto Typer is a desktop application that simulates realistic human typing behavior. It lets you automatically type text content into any application while mimicking natural typing patterns including random pauses, occasional typos, and text revisions.
 
-![image](https://github.com/user-attachments/assets/f8782c00-bde1-45ab-9537-5adcdc684fc4)
-
+Auto Typer is a powerful, customizable tool designed to simulate realistic human typing behavior. It allows you to automatically type text from files or the built-in editor into any application with adjustable typing characteristics like speed, typos, and natural pauses.
 
 ## Features
-- **Realistic Typing Simulation**: Mimics human typing with customizable delays, typos, and editing behavior
-- **Text Editor**: Built-in editor for creating or modifying text to be typed
-- **File Management**: Open and save text files directly within the application
-- **Customizable Settings**: Adjust typing speed, typo frequency, deletion chance, and pause behavior
-- **Modern UI**: Clean, intuitive interface with tabbed organization
-- **Emergency Stop**: Press ESC at any time to abort the typing process
+
+- **Realistic Typing Simulation**: Adjustable typing speed, typo correction, pausing, and deletion behavior
+- **Intuitive Interface**: Clean, modern UI with both light and dark modes
+- **Built-in Text Editor**: Edit your content directly within the application
+- **Preview Mode**: Test your typing settings before deploying them
+- **Configurable Hotkeys**: Customize keyboard shortcuts for common actions
+- **Session Statistics**: View performance metrics after each typing session
+- **Typing Behavior Presets**: Choose from pre-configured typing behaviors or create custom ones
 
 ## Installation
 
@@ -20,57 +22,79 @@ Auto Typer is a desktop application that simulates realistic human typing behavi
 - Python 3.6 or higher
 - Required Python packages:
   - pyautogui
-  - Pillow (PIL)
   - keyboard
+  - Pillow (PIL)
 
-### Setup
+### Setup Instructions
+
 1. Clone or download this repository
 2. Install required packages:
    ```
-   pip install pyautogui pillow keyboard
+   pip install pyautogui keyboard pillow
    ```
 3. Run the application:
    ```
-   python auto_typer.py
+   python autotyper.py
    ```
 
-## Usage
+## Usage Guide
 
-### Basic Operation
-1. Open the application
-2. Either load a text file using the "Browse" button or type content directly in the editor
-3. Click "Start Typing"
-4. Quickly click into your target application (e.g., Word, Notepad, browser)
-5. The application will automatically type the text with realistic human behavior
-6. Press ESC at any time to stop the typing process
+### Getting Started
 
-### Customizing Typing Behavior
-Navigate to the "Options" tab to adjust:
-- **Delay between words**: Controls typing speed (0.1-2.0 seconds)
-- **Typo Chance**: Controls how often a typo is made and then corrected (0-20%)
-- **Delete Chance**: Controls how often text is deleted and retyped (0-30%)
-- **Pause Chance**: Controls frequency of natural pauses in typing (0-30%)
+1. Launch Auto Typer
+2. Load text content using one of these methods:
+   - Type directly in the editor
+   - Click "Browse" to load from a text file
+3. Adjust typing behavior settings in the "Options" tab
+4. Click "Preview Typing" to test your settings
+5. When ready, click "Start Typing"
+6. Focus on your target application within 3 seconds
+7. Press the configured hotkey (default: ESC) to stop typing
 
-## Tips for Best Results
-- Always have your target application open and focused before starting the typing process
-- For longer texts, consider breaking them into smaller chunks
-- Test with shorter texts first to find your preferred settings
-- Make sure your cursor is correctly positioned in the target application
-- Use the ESC key to stop typing at any time
+### Typing Behavior Settings
 
-## Keyboard Shortcuts
-- **ESC**: Stop the typing process
-- **Ctrl+S**: Save the current text
-- **Ctrl+O**: Open a file
-- **Ctrl+N**: Clear the editor
+| Setting | Description |
+|---------|-------------|
+| Delay between words | Time between typing each word (in seconds) |
+| Typo Chance | Probability of making and correcting typos |
+| Delete Chance | Probability of deleting and retyping text |
+| Pause Chance | Probability of natural pauses during typing |
+| Stop Hotkey | Key to stop typing (e.g., 'esc', 'f1') |
+
+### Presets
+
+Choose from built-in typing behavior presets:
+- **Fast Typist**: Quick typing with minimal errors
+- **Beginner**: Slower typing with frequent corrections
+- **Professional**: Moderate speed with occasional corrections
+- **Custom**: Your custom settings
+
+### Keyboard Shortcuts
+
+| Action | Default Shortcut |
+|--------|------------------|
+| Save File | Ctrl+S |
+| Open File | Ctrl+O |
+| Clear Editor | Ctrl+N |
+| Stop Typing | ESC (configurable) |
+
+## Best Practices
+
+- Open the target application before starting Auto Typer
+- Position your cursor correctly before initiating typing
+- Break long texts into smaller sections for better control
+- Use the Preview feature to test settings before actual use
+- Save frequently used configurations
+
+## Important Notes
+
+⚠️ **Use Responsibly**: Auto Typer is designed for legitimate purposes. Misuse for spamming, circumventing anti-cheat systems, or any unauthorized automation may violate terms of service agreements.
 
 ## Troubleshooting
-- If typing doesn't start, make sure you clicked into the target application within the 3-second countdown
-- If typing appears erratic, try reducing the typing speed by increasing the delay value
-- Make sure the target application can receive text input and is not in protected or read-only mode
+
+- **Typing not working**: Ensure target application is in focus and accepting text input
+- **Hot keys not responding**: Verify there are no conflicts with other applications
+- **Unexpected behavior**: Try resetting to default settings in the Options tab
 
 ## License
-This software is provided "as is" without warranty of any kind.
-
-## Credits
-Developed by Jfreaky
+Made By the one and only Jfreaky
